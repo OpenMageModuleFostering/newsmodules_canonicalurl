@@ -50,8 +50,6 @@ else
 		 */
 		public function getUrl(Mage_Catalog_Model_Product $product, $params = array())
 		{
-			//mail('a.lioce@ne-ws.it', Mage::getVersion(), '');
-		
 			$routePath      = '';
 			$routeParams    = $params;
 	
