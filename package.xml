@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package>
+    <name>NewsModules_CanonicalUrl</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license>GNU General Public License (GPL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Change the url of the products to improve indexing on search engines.</summary>
+    <description>When Magento generates the url of a product, use the url key of the categories that represent the path to the current category and add the url key of the product followed by .html&#xD;
+&#xD;
+If we are in the category Chancellery and click on the product Pen, Magento will use the url www.domain.com/chancellery/pen.html&#xD;
+&#xD;
+If the product Pen is also visible in Homepage and we click on it, Magento will use the url www.domain.com/pen.html&#xD;
+&#xD;
+If we enable the option&#xD;
+System &gt; Configuration &gt; Catalog &gt; Search Engine Optimizations &gt; Use Canonical Link Meta Tag For Products&#xD;
+putting it to "Yes" in the product page will be added the meta tag for the canonical url which in our example will always correspond to www.domain.com/pen.html&#xD;
+&#xD;
+Our module allows Magento to use the full url with the path of the category for both products in Homepage than the canonical url for improving the indexing on search engines.&#xD;
+The url generated to display a product passing from one category are not altered.&#xD;
+&#xD;
+If the product is assigned to more than one category, it always will use the path to the first category.&#xD;
+&#xD;
+The specified versions are tested versions. The module may also work on other versions.</description>
+    <notes>Change the url of the products to improve indexing on search engines.</notes>
+    <authors><author><name>Alessandro Lioce</name><user>alioce</user><email>a.lioce@ne-ws.it</email></author></authors>
+    <date>2014-06-10</date>
+    <time>08:38:38</time>
+    <contents><target name="magecommunity"><dir name="NewsModules"><dir name="CanonicalUrl"><dir name="Block"><dir name="Product"><file name="View.php" hash="c4b2421cf6161539cabb9d037afc8de1"/></dir></dir><dir name="Catalog"><dir name="Model"><dir name="Product"><file name="Url.php" hash="0daed50ad3951ee14800df4c0db1aa2a"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="091ca25983e433bad8023565f275c95c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="NewsModules_CanonicalUrl.xml" hash="810f1c3601c299daa715a21abd71372b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.13</min><max>5.4.29</max></php></required></dependencies>
+</package>

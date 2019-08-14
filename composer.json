@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/NewsModules_CanonicalUrl",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License-(GPL)",
+    "homepage": "",
+    "description": "Change the url of the products to improve indexing on search engines.",
+    "authors": [
+    {
+        "name": "Alessandro Lioce",
+        "email": "a.lioce@ne-ws.it"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

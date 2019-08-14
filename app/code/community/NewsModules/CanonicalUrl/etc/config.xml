@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<NewsModules_CanonicalUrl>
+			<version>0.1.0</version>
+		</NewsModules_CanonicalUrl>
+	</modules>
+	<global>
+		<blocks>
+			<catalog>
+				<rewrite>
+					<product_view>NewsModules_CanonicalUrl_Block_Product_View</product_view>
+				</rewrite>
+			</catalog>
+		</blocks>
+		<models>
+			<catalog>
+				<rewrite>
+					<product_url>NewsModules_CanonicalUrl_Catalog_Model_Product_Url</product_url>
+				</rewrite>
+			</catalog>
+		</models>
+	</global>
+</config>
